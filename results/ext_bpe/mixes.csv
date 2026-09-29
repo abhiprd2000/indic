@@ -1,0 +1,13 @@
+mix,K_max,lang,target_MB,unique_MB,repeat,eff_MB_mix
+hin_only,8000,hin,40.0,40.0,1.0,40.0
+natural4,8000,hin,13.13,13.13,1.0,40.0
+natural4,8000,bho,9.19,9.19,1.0,40.0
+natural4,8000,mai,17.28,17.28,1.0,40.0
+natural4,8000,mag,0.4,0.4,1.0,40.0
+upsampled4,32000,hin,11.99,11.99,1.0,40.0
+upsampled4,32000,bho,10.77,10.77,1.0,40.0
+upsampled4,32000,mai,13.02,13.02,1.0,40.0
+upsampled4,32000,mag,4.22,3.76,1.12,40.0
+lowonly,8000,bho,15.39,15.39,1.0,40.0
+lowonly,8000,mai,18.59,18.59,1.0,40.0
+lowonly,8000,mag,6.02,3.76,1.6,40.0

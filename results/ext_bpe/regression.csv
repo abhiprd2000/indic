@@ -1,0 +1,23 @@
+mix,K,test_set,pct_sents_changed,fertility,base_fertility,delta
+base,0,Hindi (HDTB),0.0,4.4207,4.4207,0.0
+base,0,English (2k),0.0,1.3127,1.3127,0.0
+upsampled4,500,Hindi (HDTB),100.0,2.7203,4.4207,-1.7004
+upsampled4,500,English (2k),0.0,1.3127,1.3127,0.0
+upsampled4,1000,Hindi (HDTB),100.0,2.5756,4.4207,-1.8451
+upsampled4,1000,English (2k),0.0,1.3127,1.3127,0.0
+upsampled4,2000,Hindi (HDTB),100.0,2.492,4.4207,-1.9287
+upsampled4,2000,English (2k),0.0,1.3127,1.3127,0.0
+upsampled4,4000,Hindi (HDTB),100.0,2.4535,4.4207,-1.9672
+upsampled4,4000,English (2k),0.0,1.3127,1.3127,0.0
+upsampled4,8000,Hindi (HDTB),100.0,2.438,4.4207,-1.9827
+upsampled4,8000,English (2k),0.0,1.3127,1.3127,0.0
+upsampled4,16000,Hindi (HDTB),100.0,2.4316,4.4207,-1.9891
+upsampled4,16000,English (2k),0.25,1.3125,1.3127,-0.0002
+upsampled4,32000,Hindi (HDTB),100.0,2.4302,4.4207,-1.9905
+upsampled4,32000,English (2k),3.55,1.3107,1.3127,-0.002
+hin_only,8000,Hindi (HDTB),100.0,2.4337,4.4207,-1.987
+hin_only,8000,English (2k),0.2,1.3125,1.3127,-0.0002
+natural4,8000,Hindi (HDTB),100.0,2.4384,4.4207,-1.9823
+natural4,8000,English (2k),0.0,1.3127,1.3127,0.0
+lowonly,8000,Hindi (HDTB),100.0,2.4449,4.4207,-1.9758
+lowonly,8000,English (2k),0.0,1.3127,1.3127,0.0
