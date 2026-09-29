@@ -1,0 +1,11 @@
+test_set,system,unit,value,ci_lo,ci_hi,note
+Bhojpuri (BHTB),Qwen3 base (K=0),tokens/word,4.072,4.026,4.116,"our tokenizers, whitespace words"
+Bhojpuri (BHTB),"a original, K=8k",tokens/word,2.18,2.154,2.204,"our tokenizers, whitespace words"
+Bhojpuri (BHTB),"b all marks, K=8k",tokens/word,1.293,1.276,1.31,"our tokenizers, whitespace words"
+Bhojpuri (BHTB),"d Devanagari marks, K=8k",tokens/word,1.293,1.276,1.31,"our tokenizers, whitespace words"
+Bhojpuri (BHTB),Qwen3 H-Net (ByteChunk Table 1),chunks/word,1.17,,,value as given by user; chunk and token definitions differ (learned byte chunks vs vocabulary tokens); not directly comparable
+Magahi (MGTB),Qwen3 base (K=0),tokens/word,3.838,3.806,3.867,"our tokenizers, whitespace words"
+Magahi (MGTB),"a original, K=8k",tokens/word,2.015,1.996,2.031,"our tokenizers, whitespace words"
+Magahi (MGTB),"b all marks, K=8k",tokens/word,1.33,1.318,1.343,"our tokenizers, whitespace words"
+Magahi (MGTB),"d Devanagari marks, K=8k",tokens/word,1.33,1.318,1.343,"our tokenizers, whitespace words"
+Magahi (MGTB),Qwen3 H-Net (ByteChunk Table 1),chunks/word,1.17,,,value as given by user; chunk and token definitions differ (learned byte chunks vs vocabulary tokens); not directly comparable
