@@ -1,0 +1,3 @@
+data/raw/hf/
+data/*/tok_train.txt
+__pycache__/

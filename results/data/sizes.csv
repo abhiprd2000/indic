@@ -1,0 +1,16 @@
+lang,split,sentences,words,MB,lang_total_MB,under_5MB
+bho,tok_train,405159,6775210,85.296,85.891,False
+bho,dev,1006,15367,0.189,85.891,False
+bho,test,2006,32881,0.405,85.891,False
+mai,tok_train,815470,11344836,160.308,160.95,False
+mai,dev,1004,14847,0.211,160.95,False
+mai,test,2011,30623,0.43,160.95,False
+mag,tok_train,15652,306721,3.742,4.37,True
+mag,dev,1128,20552,0.259,4.37,True
+mag,test,2013,31213,0.369,4.37,True
+ang,tok_train,5221,144405,1.857,2.667,True
+ang,dev,747,20602,0.266,2.667,True
+ang,test,1492,42318,0.543,2.667,True
+hin,tok_train,508063,9588130,121.938,122.889,False
+hin,dev,1654,34651,0.436,122.889,False
+hin,test,2001,41147,0.515,122.889,False
