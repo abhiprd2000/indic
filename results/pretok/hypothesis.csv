@@ -1,0 +1,6 @@
+test_set,words,pct_words_with_mark,pretokens_per_word_a,pct_words_split_a,pretokens_per_word_b,pct_words_split_b,pretokens_per_word_c,pct_words_split_c
+Bhojpuri (BHTB),6660,74.3,2.159,74.5,1.008,0.7,2.19,66.6
+Magahi (MGTB),7702,70.9,1.964,71.0,1.004,0.4,2.145,69.2
+Hindi (HDTB),34917,84.3,2.413,85.5,1.036,2.6,2.217,68.3
+Maithili (web),30623,81.4,2.507,83.5,1.127,10.9,2.722,83.8
+Angika (MT),42318,81.1,2.575,82.1,1.037,1.9,2.253,67.0

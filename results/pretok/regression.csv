@@ -1,0 +1,7 @@
+variant,test_set,fertility,delta_vs_base,pct_sents_changed_K0,pct_sents_changed_K8k
+a,Hindi (HDTB),2.4449,-1.9758,0.0,100.0
+a,English (2k),1.3127,0.0,0.0,0.0
+b,Hindi (HDTB),1.4544,-2.9663,5.0,100.0
+b,English (2k),1.3127,0.0,0.0,0.0
+c,Hindi (HDTB),2.234,-2.1867,99.3,100.0
+c,English (2k),1.3124,-0.0003,0.0,0.5
