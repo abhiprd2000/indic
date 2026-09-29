@@ -4,3 +4,6 @@ __pycache__/
 artifacts/tok/pre_*/*
 !artifacts/tok/pre_?/merges.json
 artifacts/tok/sweep/*/
+data/adapt_pack/
+data/adapt_pack/**
+results/adapt_local/

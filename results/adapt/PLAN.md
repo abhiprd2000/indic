@@ -21,3 +21,14 @@ NOT RUN. Checked this session: no GPU (`nvidia-smi` missing), no PyTorch, 4 CPU 
 - C BPB <= A BPB on bho, mai, mag.
 - English BPB of C within +1% of A.
 If not met: report plainly. One fallback allowed (double the steps if time allows); report both runs.
+
+## Addendum (written before the first real run; hardware and unspecified details, criteria unchanged)
+- Hardware: Kaggle kernel with 2x Tesla T4 (15 GB each). An RTX Pro 6000 request gave a CPU-only kernel. T4 has no native bf16, so compute is fp16 autocast over fp32 weights (GradScaler for training); this replaces "bf16". Check: arm A BPB on 200 bho test sentences in fp16 autocast vs bf16 (emulated) is reported. Speed numbers are fp16 on T4. One GPU is used.
+- Trainable: a fp32 matrix of the 8000 new rows, shared by input embedding and the tied output head (old rows are a frozen buffer, so old rows cannot change). AdamW wd 0. 20 warmup steps, then cosine to 0.
+- Batch: 4 sequences x 512 per micro-batch, 4 accumulation steps = 16 sequences (8192 tokens) per step. Units are shuffled, joined with `<|endoftext|>`, and cut into 512-token blocks.
+- LR trials: 300 steps each from the same init; pick lower mean dev BPB over bho, mai, mag (first 300 dev sentences each; hin and English dev also logged). If a trial diverges (NaN), it loses.
+- Compute rule: t = seconds per step from 20 steps. If (600 + full steps) x t > 2.5 h, cut the number of full steps (data) to fit; if fewer than 500 full steps would fit, halve seq length and re-measure. Never the model.
+- BPB set: test sentences under 1500 UTF-8 bytes (same set for all arms; dropped count reported). Start token `<|endoftext|>`.
+- POS probe: batch 32 sentences; features are last hidden states after the final norm, with `<|endoftext|>` prepended; accuracy over all test words; tags unseen in HDTB count as errors.
+- English replay and dev come from HuggingFaceFW/fineweb-edu sample-10BT streamed in order (first docs); no test sentence appears in the replay text (checked in code).
+- Memory (found in a smoke run: 4x512 micro-batches ran out of memory on a 15 GB T4): micro-batch 2 sequences x 512 with 8 accumulation steps; the step is still 16 sequences (8192 tokens). No criteria change.
