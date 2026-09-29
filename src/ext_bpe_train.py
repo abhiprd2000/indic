@@ -74,6 +74,8 @@ def build(base_dir, merges, K, out):
     """Write HF tokenizer with first K new merges appended after base merges."""
     j = json.load(open(f"{base_dir}/tokenizer.json")); m = j["model"]
     nid = max(max(m["vocab"].values()), max(a["id"] for a in j["added_tokens"])) + 1
+    # tokenizers renumbers special tokens to len(vocab) unless they are in the model vocab; keep their ids fixed
+    for a in j["added_tokens"]: m["vocab"].setdefault(a["content"], a["id"])
     for k, (a, b) in enumerate(merges[:K]):
         m["vocab"][a + b] = nid + k; m["merges"].append([a, b])
     os.makedirs(out, exist_ok=True)
