@@ -1,0 +1,19 @@
+variant,test_set,smallest_K_le_2.0,smallest_K_le_1.5
+a,Bhojpuri (BHTB),none,none
+a,Magahi (MGTB),16000,none
+a,Maithili (web),none,none
+a,Angika (MT),none,none
+a,Hindi (HDTB),none,none
+a,English (2k),0,0
+b,Bhojpuri (BHTB),1000,4000
+b,Magahi (MGTB),1000,4000
+b,Maithili (web),4000,32000
+b,Angika (MT),4000,32000
+b,Hindi (HDTB),2000,8000
+b,English (2k),0,0
+d,Bhojpuri (BHTB),1000,4000
+d,Magahi (MGTB),1000,4000
+d,Maithili (web),4000,32000
+d,Angika (MT),4000,32000
+d,Hindi (HDTB),2000,8000
+d,English (2k),0,0

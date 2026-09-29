@@ -1,0 +1,37 @@
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+a unique pretokens 51063 merges 32000
+done a 66s
+b unique pretokens 237435 merges 32000
+done b 147s
+d unique pretokens 237630 merges 32000
+done d 226s
+test_set       Bhojpuri (BHTB)  Magahi (MGTB)  Maithili (web)  Angika (MT)  Hindi (HDTB)  English (2k)
+variant K                                                                                             
+a       0                 4.07           3.84            5.10         4.79          4.42          1.31
+        8000              2.18           2.02            2.58         2.61          2.44          1.31
+        32000             2.17           1.99            2.54         2.59          2.43          1.31
+b       0                 4.07           3.84            5.10         4.79          4.42          1.31
+        8000              1.29           1.33            1.66         1.77          1.45          1.31
+        32000             1.11           1.17            1.39         1.47          1.21          1.31
+d       0                 4.07           3.84            5.10         4.79          4.42          1.31
+        8000              1.29           1.33            1.65         1.77          1.45          1.31
+        32000             1.11           1.17            1.39         1.47          1.21          1.31
+variant        test_set smallest_K_le_2.0 smallest_K_le_1.5
+      a Bhojpuri (BHTB)              none              none
+      a   Magahi (MGTB)             16000              none
+      a  Maithili (web)              none              none
+      a     Angika (MT)              none              none
+      a    Hindi (HDTB)              none              none
+      a    English (2k)                 0                 0
+      b Bhojpuri (BHTB)              1000              4000
+      b   Magahi (MGTB)              1000              4000
+      b  Maithili (web)              4000             32000
+      b     Angika (MT)              4000             32000
+      b    Hindi (HDTB)              2000              8000
+      b    English (2k)                 0                 0
+      d Bhojpuri (BHTB)              1000              4000
+      d   Magahi (MGTB)              1000              4000
+      d  Maithili (web)              4000             32000
+      d     Angika (MT)              4000             32000
+      d    Hindi (HDTB)              2000              8000
+      d    English (2k)                 0                 0
