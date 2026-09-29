@@ -3,3 +3,4 @@ data/*/tok_train.txt
 __pycache__/
 artifacts/tok/pre_*/*
 !artifacts/tok/pre_?/merges.json
+artifacts/tok/sweep/*/

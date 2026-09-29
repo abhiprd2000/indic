@@ -13,15 +13,18 @@ _vow = f"[{_c(0x904)}-{_c(0x914)}{_c(0x960)}{_c(0x961)}]"
 AKSH = f"(?:{_cons}{_c(0x93C)}?{_c(0x94D)})*{_cons}{_c(0x93C)}?{_marks}*|{_vow}{_marks}*"
 _first, _rest = A.split("|", 1)
 C = f"{_first}|[^\\r\\n\\p{{L}}\\p{{M}}\\p{{N}}]?(?:{AKSH})|{_rest}"
-REGEX = {"a_original": A, "b_marks_attached": B, "c_akshara": C}
+# d: only Devanagari combining marks (the _marks class plus nukta U+093C, which _marks omits) join letters
+_dm = _marks[1:-1] + _c(0x93C)
+D = A.replace(ORIG_LETTER, f"[^\\r\\n\\p{{L}}\\p{{N}}{_dm}]?[\\p{{L}}{_dm}]+")
+REGEX = {"a_original": A, "b_marks_attached": B, "c_akshara": C, "d_devanagari_marks": D}
 
 def split_only(rx):
     """Pre-tokenizer that shows plain text pieces (no byte mapping)."""
     return pre_tokenizers.Split(Regex(rx), "isolated")
 
-def variant_dir(name, rx):
-    """Copy base tokenizer to artifacts/tok/pre_<name> with the given split regex."""
-    out = f"artifacts/tok/pre_{name}"
+def variant_dir(name, rx, out=None):
+    """Copy base tokenizer to artifacts/tok/pre_<name> (or out) with the given split regex."""
+    out = out or f"artifacts/tok/pre_{name}"
     if os.path.exists(out): shutil.rmtree(out)
     shutil.copytree("artifacts/tok/base", out)
     j = json.load(open(f"{out}/tokenizer.json"))
