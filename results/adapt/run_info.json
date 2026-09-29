@@ -1,0 +1,18 @@
+{
+ "smoke": false,
+ "model": "real",
+ "gpu": "Tesla T4",
+ "torch": "2.10.0+cu128",
+ "pack": "/kaggle/input/datasets/abhiprd200/indic-adapt-data",
+ "train_tokens": 4089716,
+ "blocks": 7987,
+ "sec_per_step": 4.159385001659393,
+ "seq": 512,
+ "steps_full": 499,
+ "projected_h": 1.269767810228798,
+ "lr": 0.001,
+ "train_seconds": 2073.052707672119,
+ "gpu_seconds_total": 4647.889319419861,
+ "peak_mem_GiB": 8.4591646194458,
+ "total_seconds": 5375.455751419067
+}

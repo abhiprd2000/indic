@@ -1,0 +1,2 @@
+set,fp16_autocast_bpb,bf16_bpb,diff_pct
+bho first 200 test,1.304057452006297,1.30708620657848,-0.23171804253915296

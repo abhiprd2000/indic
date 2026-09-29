@@ -7,3 +7,4 @@ artifacts/tok/sweep/*/
 data/adapt_pack/
 data/adapt_pack/**
 results/adapt_local/
+artifacts/adapt/*.pt

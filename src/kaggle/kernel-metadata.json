@@ -1,0 +1,1 @@
+{"id":"abhiprd200/indic-adapt-run","title":"indic adapt run","code_file":"run.py","language":"python","kernel_type":"script","is_private":true,"enable_gpu":true,"enable_tpu":false,"enable_internet":true,"dataset_sources":["abhiprd200/indic-adapt-data"],"kernel_sources":[],"competition_sources":[],"model_sources":[]}
