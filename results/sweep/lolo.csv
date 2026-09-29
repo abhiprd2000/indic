@@ -1,0 +1,5 @@
+language,seen_in_training,base_K0,all_langs,all_lo,all_hi,held_out,held_lo,held_hi,delta_held_vs_all
+Bhojpuri (BHTB),in all-language run,4.072,1.293,1.276,1.31,1.47,1.451,1.489,0.178
+Maithili (web),in all-language run,5.099,1.655,1.636,1.674,1.96,1.939,1.979,0.305
+Magahi (MGTB),in all-language run,3.838,1.33,1.318,1.343,1.367,1.355,1.38,0.037
+Angika (MT),no (unseen),4.789,1.769,1.756,1.781,,,,
