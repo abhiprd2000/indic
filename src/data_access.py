@@ -15,10 +15,10 @@ def _lines(p):
     return [l.strip() for l in open(p, encoding="utf-8") if l.strip()]
 
 def load(lang, split, purpose=None):
-    """Sentences of data/<lang>/<split>.txt; split in tok_train, dev, test."""
-    assert split in ("tok_train", "dev", "test") and lang in LANGS, (lang, split)
+    """Sentences of data/<lang>/<split>.txt; split in tok_train, train_f (filtered train), dev, test."""
+    assert split in ("tok_train", "train_f", "dev", "test") and lang in LANGS, (lang, split)  # train_f = filtered train (Stage 1A)
     if split == "test": _gate(f"{lang}/test", purpose)
-    return _lines(f"data/{lang}/{split}.txt")
+    return _lines(f"data/{lang}/{'tok_train_filtered' if split == 'train_f' else split}.txt")
 
 def ud_path(name, purpose=None):
     """CoNLL-U path, e.g. bho_bhtb-ud-test; test files are locked."""

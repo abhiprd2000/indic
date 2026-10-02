@@ -1,0 +1,6 @@
+lang,n_train,removed_neardup_only,removed_script_only,removed_both,n_kept,MB_train,MB_kept,bad_script_chars
+bho,405159,156,574,3,404426,85.7,84.93,321
+mai,815470,44,751,0,814675,161.12,160.92,919
+mag,15652,1,23,0,15628,3.76,3.75,76
+ang,5221,0,13,0,5208,1.86,1.86,38
+hin,508063,11,80,0,507972,122.45,122.42,177
