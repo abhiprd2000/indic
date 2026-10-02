@@ -22,3 +22,9 @@ All runs are logged, including failures; earlier results that used test sets for
 - English dev = AngikaMT English dev column (997 sentences, disjoint from the English test sample, checked in code).
 - Step 4 FLORES+ safety check and the round-trip check use FLORES+ dev and the dev/test sets with `purpose="audit"` (integrity only, no metric). FLORES+ devtest is read only in step 6 with FINAL_EVAL=1.
 - New-token script check: complete characters in a new token must be Devanagari, Latin, digits, punctuation or spaces; fragments of a split UTF-8 character count as violations only if their known bytes already lie outside those ranges.
+
+## Stage 1B addendum (written before any Stage 1B run)
+- Scan (measurement only, FINAL_EVAL=1, nothing selected from it): Qwen/Qwen2.5-7B, Qwen/Qwen3-1.7B, meta-llama/Llama-3.1-8B, meta-llama/Llama-3.2-1B, google/gemma-3-4b-pt, mistralai/Mistral-Nemo-Base-2407, microsoft/phi-4, allenai/Olmo-3-1025-7B, deepseek-ai/DeepSeek-V3, HuggingFaceTB/SmolLM3-3B, tiktoken o200k_base; references xlm-roberta-base, google/mt5-base, ai4bharat/IndicBERTv2-MLM-only. Gated or missing ones are listed, not replaced.
+- "Cuts at combining marks": at least 10% of Devanagari whitespace words (pooled over the Devanagari test sets) have a pre-token boundary immediately before a Devanagari combining mark. The scoped fix is applied only to byte-level BPE tokenizers that meet this and whose regex contains the letter run `[^\r\n\p{L}\p{N}]?\p{L}+`; same mark set as variant d. Continued BPE on the filtered lowonly mix, K=1000 and 8000.
+- Danda ablation: variant d, K=8000, no new token may contain U+0964 or U+0965. If dev fertility moves by less than 0.01 on every dev set and the Bengali change rate is about 0, report it as the cleaner default.
+- Native labels (own / hindi / mixed / other) get 95% Wilson intervals per language; no sentence is dropped because of them.
