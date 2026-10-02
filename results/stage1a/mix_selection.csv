@@ -1,0 +1,5 @@
+mix,score,unique_MB,n_langs,within_0.01_of_best
+lowonly,2.0757,37.72,3,True
+upsampled4,2.0879,39.53,4,False
+natural4,2.1121,39.99,4,False
+hin_only,2.3621,40.0,1,False

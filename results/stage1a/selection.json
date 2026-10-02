@@ -1,0 +1,11 @@
+{
+ "K": [
+  500,
+  1000,
+  2000,
+  4000,
+  8000
+ ],
+ "mix": "lowonly",
+ "rule": "mean dev fertility over bho/mai/mag/ang and K candidates; within 0.01 -> fewer unique MB, then fewer languages"
+}
