@@ -1,0 +1,11 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+bho neardup [{'lang': 'bho', 'pair': 'train-dev', 'n_query': 1006, 'n_query_with_train_neighbour': 10, 'n_train_flagged': 159}, {'lang': 'bho', 'pair': 'train-test', 'n_query': 2006, 'n_query_with_train_neighbour': 127}, {'lang': 'bho', 'pair': 'dev-test', 'n_query': 1006, 'n_query_with_train_neighbour': 1}]
+bho lid [('tok_train', 17.39, 2.2), ('dev', 22.86, 1.99), ('test', 13.51, 1.0)]
+mai neardup [{'lang': 'mai', 'pair': 'train-dev', 'n_query': 1004, 'n_query_with_train_neighbour': 22, 'n_train_flagged': 44}, {'lang': 'mai', 'pair': 'train-test', 'n_query': 2011, 'n_query_with_train_neighbour': 13}, {'lang': 'mai', 'pair': 'dev-test', 'n_query': 1004, 'n_query_with_train_neighbour': 0}]
+mai lid [('tok_train', 19.25, 1.43), ('dev', 23.61, 0.5), ('test', 16.81, 1.04)]
+mag neardup [{'lang': 'mag', 'pair': 'train-dev', 'n_query': 1128, 'n_query_with_train_neighbour': 1, 'n_train_flagged': 1}, {'lang': 'mag', 'pair': 'train-test', 'n_query': 2013, 'n_query_with_train_neighbour': 0}, {'lang': 'mag', 'pair': 'dev-test', 'n_query': 1128, 'n_query_with_train_neighbour': 0}]
+mag lid [('tok_train', 26.42, 2.63), ('dev', 16.93, 2.04), ('test', 33.33, 1.64)]
+ang neardup [{'lang': 'ang', 'pair': 'train-dev', 'n_query': 747, 'n_query_with_train_neighbour': 0, 'n_train_flagged': 0}, {'lang': 'ang', 'pair': 'train-test', 'n_query': 1492, 'n_query_with_train_neighbour': 0}, {'lang': 'ang', 'pair': 'dev-test', 'n_query': 747, 'n_query_with_train_neighbour': 0}]
+ang lid [('tok_train', 8.6, 0.56), ('dev', 7.23, 0.13), ('test', 8.85, 0.74)]
+hin neardup [{'lang': 'hin', 'pair': 'train-dev', 'n_query': 1654, 'n_query_with_train_neighbour': 0, 'n_train_flagged': 11}, {'lang': 'hin', 'pair': 'train-test', 'n_query': 2001, 'n_query_with_train_neighbour': 11}, {'lang': 'hin', 'pair': 'dev-test', 'n_query': 1654, 'n_query_with_train_neighbour': 0}]
+hin lid [('tok_train', 30.44, 69.56), ('dev', 1.57, 98.43), ('test', 5.5, 94.5)]

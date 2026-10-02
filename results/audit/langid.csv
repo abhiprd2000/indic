@@ -1,0 +1,16 @@
+lang,split,own_label,sampled,n,pct_not_own,pct_hin,top5
+bho,tok_train,bho_Deva,True,100000,17.39,2.2,bho_Deva:82.6;anp_Deva:4.2;awa_Deva:3.5;mag_Deva:2.6;hin_Deva:2.2
+bho,dev,bho_Deva,False,1006,22.86,1.99,bho_Deva:77.1;anp_Deva:9.0;awa_Deva:4.7;mag_Deva:2.4;hin_Deva:2.0
+bho,test,bho_Deva,False,2006,13.51,1.0,bho_Deva:86.5;anp_Deva:3.1;awa_Deva:2.8;mag_Deva:2.2;mai_Deva:1.1
+mai,tok_train,mai_Deva,True,100000,19.25,1.43,mai_Deva:80.7;anp_Deva:6.7;awa_Deva:2.2;bho_Deva:1.9;hin_Deva:1.4
+mai,dev,mai_Deva,False,1004,23.61,0.5,mai_Deva:76.4;npi_Deva:5.1;anp_Deva:4.8;awa_Deva:3.7;bho_Deva:1.7
+mai,test,mai_Deva,False,2011,16.81,1.04,mai_Deva:83.2;anp_Deva:6.3;awa_Deva:2.5;npi_Deva:1.4;bho_Deva:1.2
+mag,tok_train,mag_Deva,False,15652,26.42,2.63,mag_Deva:73.6;bho_Deva:8.0;mai_Deva:3.7;awa_Deva:3.5;anp_Deva:2.9
+mag,dev,mag_Deva,False,1128,16.93,2.04,mag_Deva:83.1;bho_Deva:4.5;anp_Deva:4.1;mai_Deva:2.8;hin_Deva:2.0
+mag,test,mag_Deva,False,2013,33.33,1.64,mag_Deva:66.7;bho_Deva:13.0;mai_Deva:7.9;awa_Deva:5.3;anp_Deva:3.2
+ang,tok_train,anp_Deva,False,5221,8.6,0.56,anp_Deva:91.4;mag_Deva:2.2;awa_Deva:2.2;mai_Deva:1.0;kas_Deva:0.8
+ang,dev,anp_Deva,False,747,7.23,0.13,anp_Deva:92.8;mag_Deva:2.5;awa_Deva:1.7;mai_Deva:1.1;npi_Deva:0.8
+ang,test,anp_Deva,False,1492,8.85,0.74,anp_Deva:91.2;mag_Deva:2.3;awa_Deva:2.1;mai_Deva:1.3;kas_Deva:0.9
+hin,tok_train,hin_Deva,True,100000,30.44,69.56,hin_Deva:69.6;anp_Deva:25.8;awa_Deva:1.5;bho_Deva:0.5;mai_Deva:0.3
+hin,dev,hin_Deva,False,1654,1.57,98.43,hin_Deva:98.4;awa_Deva:0.7;anp_Deva:0.5;bho_Deva:0.2;new_Deva:0.1
+hin,test,hin_Deva,False,2001,5.5,94.5,hin_Deva:94.5;anp_Deva:4.1;awa_Deva:0.8;new_Deva:0.3;mag_Deva:0.0

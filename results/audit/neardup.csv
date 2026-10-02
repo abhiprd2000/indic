@@ -1,0 +1,16 @@
+lang,pair,n_query,n_query_with_train_neighbour,n_train_flagged
+bho,train-dev,1006,10,159.0
+bho,train-test,2006,127,
+bho,dev-test,1006,1,
+mai,train-dev,1004,22,44.0
+mai,train-test,2011,13,
+mai,dev-test,1004,0,
+mag,train-dev,1128,1,1.0
+mag,train-test,2013,0,
+mag,dev-test,1128,0,
+ang,train-dev,747,0,0.0
+ang,train-test,1492,0,
+ang,dev-test,747,0,
+hin,train-dev,1654,0,11.0
+hin,train-test,2001,11,
+hin,dev-test,1654,0,
