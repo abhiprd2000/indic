@@ -24,7 +24,10 @@ def ac(): return torch.autocast(device_type=DEV, dtype=torch.float16, enabled=CU
 def sync():
     if CUDA: torch.cuda.synchronize()
 def tok(name): return PreTrainedTokenizerFast(tokenizer_file=f"{PACK}/{name}/tokenizer.json")
-def lines(p, n=None): return [l.rstrip("\n") for l in open(f"{PACK}/{p}", encoding="utf-8") if l.strip()][:n]
+def _lock(p):
+    if ("test" in os.path.basename(p)) and os.environ.get("FINAL_EVAL") != "1": raise PermissionError(f"{p} is a test file: set FINAL_EVAL=1")
+def lines(p, n=None):
+    _lock(p); return [l.rstrip("\n") for l in open(f"{PACK}/{p}", encoding="utf-8") if l.strip()][:n]
 
 # ---------- model ----------
 class Emb(nn.Module):
@@ -133,7 +136,7 @@ def train(model, blocks, steps, lr, tag, ckpt_dir=None, seq=SEQ, log_rows=None):
 
 # ---------- POS probe ----------
 def read_conllu(p, n):
-    out, cur = [], []
+    _lock(p); out, cur = [], []
     for l in open(f"{PACK}/{p}", encoding="utf-8"):
         l = l.rstrip("\n")
         if l.startswith("#"): continue
@@ -190,7 +193,7 @@ def pos_probe(model, tz, arm, rows):
 @torch.no_grad()
 def speed(model, tz, arm, rows):
     """64 BHTB test sentences, pure fp16 weights, 5 warmups, timed runs."""
-    txt = [l[8:].strip() for l in open(f"{PACK}/bho_bhtb-ud-test.conllu", encoding="utf-8") if l.startswith("# text =")]
+    _lock("bho_bhtb-ud-test.conllu"); txt = [l[8:].strip() for l in open(f"{PACK}/bho_bhtb-ud-test.conllu", encoding="utf-8") if l.startswith("# text =")]
     sents = random.Random(D_SEED).sample(txt, 64); enc = tz(sents, add_special_tokens=False)["input_ids"]; L = max(map(len, enc)) + 1
     x = torch.zeros(64, L, dtype=torch.long); m = torch.zeros(64, L, dtype=torch.long)
     for r, e in enumerate(enc): e = [EOS] + e; x[r, :len(e)] = torch.tensor(e); m[r, :len(e)] = 1

@@ -2,6 +2,7 @@
 import os, sys, json, random, shutil, re
 sys.path.insert(0, "src")
 import ext_bpe_train as T
+import data_access as DA
 from datasets import load_dataset
 
 SEED, OUT = 0, "data/adapt_pack"
@@ -10,8 +11,8 @@ shutil.rmtree(OUT, ignore_errors=True); os.makedirs(OUT)
 for d, s in [("tok_base", "artifacts/tok/base/tokenizer.json"), ("tok_d8k", "artifacts/tok/sweep/d_K8000/tokenizer.json")]:
     os.makedirs(f"{OUT}/{d}"); shutil.copy(s, f"{OUT}/{d}/tokenizer.json")
 json.dump(json.load(open("artifacts/tok/sweep/merges_d.json"))[:8000], open(f"{OUT}/merges_d8000.json", "w"), ensure_ascii=False)
-for f in ["hi_hdtb-ud-train", "bho_bhtb-ud-test", "mag_mgtb-ud-test"]: shutil.copy(f"data/ud/{f}.conllu", f"{OUT}/{f}.conllu")
-for l in ["bho", "mai", "mag", "ang", "hin", "en"]: shutil.copy(f"data/{l}/test.txt", f"{OUT}/test_{l}.txt")
+for f in ["hi_hdtb-ud-train", "bho_bhtb-ud-test", "mag_mgtb-ud-test"]: shutil.copy(DA.ud_path(f), f"{OUT}/{f}.conllu")
+for l in ["bho", "mai", "mag", "ang", "hin", "en"]: open(f"{OUT}/test_{l}.txt", "w", encoding="utf-8").write("\n".join(DA.load(l, "test")) + "\n")
 # train mix
 sizes = {l: sum(len(s.encode()) + 1 for s in T.read_lines(l)) / 1e6 for l in ["bho", "mai", "mag"]}
 w = {l: v ** ALPHA for l, v in sizes.items()}; tgt = {l: LOW_MB * w[l] / sum(w.values()) for l in w}; tgt["hin"] = HIN_MB
@@ -31,14 +32,14 @@ for r in ds:
     else:
         dev_docs.append(t)
         if sum(len(x.encode()) for x in dev_docs) >= EN_DEV_MB * 1e6: break
-test_en = [l.strip() for l in open("data/en/test.txt", encoding="utf-8")]
+test_en = DA.load("en", "test")
 big = "\n".join(en); leak = sum(s in big for s in test_en); assert leak == 0, f"English test sentences found in replay: {leak}"
 units += [("en", t) for t in en]; used["en"] = round(n / 1e6, 2)
 random.Random(SEED).shuffle(units)
 with open(f"{OUT}/train.tsv", "w", encoding="utf-8") as f:
     for l, t in units: f.write(f"{l}\t{t}\n")
 for l in ["bho", "mai", "mag", "hin"]:
-    open(f"{OUT}/dev_{l}.txt", "w", encoding="utf-8").write("".join(x for x in open(f"data/{l}/dev.txt", encoding="utf-8").readlines()[:300]))
+    open(f"{OUT}/dev_{l}.txt", "w", encoding="utf-8").write("\n".join(DA.load(l, "dev")[:300]) + "\n")
 sent = [s for d in dev_docs for s in re.split(r"(?<=[.!?])\s+", d) if len(s.split()) >= 5][:300]
 open(f"{OUT}/dev_en.txt", "w", encoding="utf-8").write("\n".join(sent) + "\n")
 os.makedirs(f"{OUT}/code"); [shutil.copy(f"src/{f}", f"{OUT}/code/{f}") for f in os.listdir("src") if f.startswith("adapt_") and f != "adapt_prep.py"]

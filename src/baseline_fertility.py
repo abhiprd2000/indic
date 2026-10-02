@@ -6,15 +6,19 @@ from transformers import AutoTokenizer
 TOKS = {"Qwen3": "Qwen/Qwen3-1.7B", "Gemma3": "google/gemma-3-4b-pt", "Llama3.1": "meta-llama/Llama-3.1-8B",
         "XLM-R": "xlm-roberta-base", "mBERT": "bert-base-multilingual-cased",
         "IndicBERTv2": "ai4bharat/IndicBERTv2-MLM-only"}
-def ud_text(f):
-    return [l[8:].strip() for l in open(f, encoding="utf-8") if l.startswith("# text =")]
-def txt(f):
-    return [l.strip() for l in open(f, encoding="utf-8") if l.strip()]
-SETS = {"Bhojpuri (BHTB)": ud_text("data/ud/bho_bhtb-ud-test.conllu"),
-        "Magahi (MGTB)": ud_text("data/ud/mag_mgtb-ud-test.conllu"),
-        "Hindi (HDTB)": ud_text("data/ud/hi_hdtb-ud-test.conllu"),
-        "Maithili (web)": txt("data/mai/test.txt"),
-        "Angika (MT)": txt("data/ang/test.txt")}
+sys.path.insert(0, "src")
+import data_access as DA
+def get_test_sets():
+    """Existing test sets; needs FINAL_EVAL=1."""
+    return {"Bhojpuri (BHTB)": DA.load_ud("bho_bhtb-ud-test"), "Magahi (MGTB)": DA.load_ud("mag_mgtb-ud-test"),
+            "Hindi (HDTB)": DA.load_ud("hi_hdtb-ud-test"), "Maithili (web)": DA.load("mai", "test"), "Angika (MT)": DA.load("ang", "test")}
+def get_dev_sets():
+    """Dev sets (free to use for selection)."""
+    return {"Bhojpuri (dev)": DA.load("bho", "dev"), "Magahi (dev)": DA.load("mag", "dev"), "Maithili (dev)": DA.load("mai", "dev"),
+            "Angika (dev)": DA.load("ang", "dev"), "Hindi (dev)": DA.load("hin", "dev"), "English (dev)": DA.load("en", "dev")}
+def __getattr__(name):  # SETS = test sets, built on first use so importing never reads test
+    if name == "SETS": return get_test_sets()
+    raise AttributeError(name)
 
 def is_mark(c): return U.category(c) in ("Mn", "Mc")
 

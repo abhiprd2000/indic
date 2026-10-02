@@ -5,12 +5,15 @@ from transformers import PreTrainedTokenizerFast
 sys.path.insert(0, "src")
 import ext_bpe_train as T
 from pretok_lib import REGEX, variant_dir
-from baseline_fertility import SETS as _SETS
+from baseline_fertility import get_test_sets, get_dev_sets
+import data_access as DA
 
 SEED = 0
 SW = "artifacts/tok/sweep"
 VARIANTS = {"a": "a_original", "b": "b_marks_attached", "d": "d_devanagari_marks"}
-SETS = dict(_SETS); SETS["English (2k)"] = [l.strip() for l in open("data/en/test.txt", encoding="utf-8")]
+def test_sets():
+    """Test sets incl. English; needs FINAL_EVAL=1."""
+    s = dict(get_test_sets()); s["English (2k)"] = DA.load("en", "test"); return s
 LANG5 = ["Bhojpuri (BHTB)", "Magahi (MGTB)", "Maithili (web)", "Angika (MT)", "Hindi (HDTB)"]
 ALLSETS = LANG5 + ["English (2k)"]
 
@@ -45,7 +48,7 @@ def boot(nw, nt, ns, B=1000):
                 pct_one_token=100 * ns.sum() / nw.sum(), one_lo=np.percentile(p, 2.5), one_hi=np.percentile(p, 97.5))
 
 def eval_tok(tok, sets=None):
-    return {sn: boot(*sent_stats(tok, s)) for sn, s in (sets or SETS).items()}
+    return {sn: boot(*sent_stats(tok, s)) for sn, s in (sets or test_sets()).items()}
 
 def target_plan(mix="lowonly"):
     langs = ["hin", "bho", "mai", "mag"]

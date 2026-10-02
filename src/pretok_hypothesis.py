@@ -3,7 +3,8 @@ import random, collections, unicodedata as U
 import pandas as pd
 import sys; sys.path.insert(0, "src")
 from pretok_lib import REGEX, split_only
-from baseline_fertility import SETS
+from baseline_fertility import get_test_sets
+SETS = get_test_sets()
 
 print("Qwen3 regex:", REGEX["a_original"])
 DEV = lambda c: "ऀ" <= c <= "ॿ"

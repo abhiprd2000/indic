@@ -7,14 +7,15 @@ sys.path.insert(0, "src")
 import ext_bpe_train as T
 AutoTokenizer = type('L', (), {'from_pretrained': staticmethod(lambda d: PreTrainedTokenizerFast(tokenizer_file=d + '/tokenizer.json'))})  # AutoTokenizer ignores a custom regex
 from pretok_lib import REGEX, variant_dir, split_only
-from baseline_fertility import SETS, stats
+from baseline_fertility import get_test_sets, stats
+import data_access as DA
 
 K = 8000
 T3 = pd.read_csv("results/ext_bpe/fertility.csv")
 t3 = T3[(T3["mode"] == "context") & (T3.K == K) & T3.test_set.str.contains("Bhojpuri|Magahi|Maithili|Angika")]
 MIX = t3.groupby("mix").fertility.mean().idxmin()  # best mix = lowest mean fertility on 4 target sets
 print("best mix from Task 3:", MIX)
-SETS = dict(SETS); SETS["English (2k)"] = [l.strip() for l in open("data/en/test.txt", encoding="utf-8")]
+SETS = dict(get_test_sets()); SETS["English (2k)"] = DA.load("en", "test")
 
 langs = ["hin", "bho", "mai", "mag"]
 lines = {l: T.read_lines(l) for l in langs}

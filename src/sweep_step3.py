@@ -13,7 +13,7 @@ rows = []
 # (i) round trip
 for (v, k), tok in toks.items():
     if k not in (0, K) or (v != "a" and k == 0): continue
-    for sn, sents in SETS.items():
+    for sn, sents in test_sets().items():
         dec = tok.batch_decode(tok(sents, add_special_tokens=False)["input_ids"], clean_up_tokenization_spaces=False)
         fail = [(s, d) for s, d in zip(sents, dec) if d != s]
         nfc = sum(1 for s, d in fail if d == U.normalize("NFC", s))
@@ -25,8 +25,7 @@ FL = ["eng_Latn", "fra_Latn", "spa_Latn", "ben_Beng", "tam_Taml", "urd_Arab", "t
 skipped, fl = [], {}
 for l in FL:
     try:
-        p = dl("openlanguagedata/flores_plus", f"devtest/{l}.jsonl", repo_type="dataset", local_dir="data/raw/hf", token=os.environ.get("HF_TOKEN"))
-        fl[l] = [json.loads(x)["text"] for x in open(p, encoding="utf-8")]
+        fl[l] = DA.load_flores(l, "devtest")
     except Exception as e: skipped.append((l, type(e).__name__))
 print("skipped FLORES+ langs:", skipped)
 base = toks[("a", 0)]

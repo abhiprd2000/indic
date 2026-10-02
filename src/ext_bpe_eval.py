@@ -5,7 +5,8 @@ import matplotlib.pyplot as plt
 from huggingface_hub import hf_hub_download as dl
 from transformers import AutoTokenizer
 sys.path.insert(0, "src")
-from baseline_fertility import SETS, stats
+from baseline_fertility import get_test_sets, stats
+import data_access as DA
 
 SEED, SWEEP = 0, [500, 1000, 2000, 4000, 8000, 16000, 32000]
 MIXES = ["hin_only", "natural4", "upsampled4", "lowonly"]
@@ -14,7 +15,7 @@ if not os.path.exists("data/en/test.txt"):  # 2k English sentences, eval only
     E = [" ".join(s.split()) for s in pd.read_csv(p)["english"].dropna()]
     random.Random(SEED).shuffle(E); os.makedirs("data/en", exist_ok=True)
     open("data/en/test.txt", "w", encoding="utf-8").write("\n".join(E[:2000]) + "\n")
-SETS = dict(SETS); SETS["English (2k)"] = [l.strip() for l in open("data/en/test.txt", encoding="utf-8")]
+SETS = dict(get_test_sets()); SETS["English (2k)"] = DA.load("en", "test")
 
 CFG = [("base", 0, "artifacts/tok/base")] + [("upsampled4", k, f"artifacts/tok/upsampled4_K{k}") for k in SWEEP] \
     + [(m, 8000, f"artifacts/tok/{m}_K8000") for m in MIXES if m != "upsampled4"]
