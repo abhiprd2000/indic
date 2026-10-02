@@ -8,3 +8,6 @@ data/adapt_pack/
 data/adapt_pack/**
 results/adapt_local/
 artifacts/adapt/*.pt
+data/*/tok_train_filtered.txt
+artifacts/tok/s1a/*/
+data/flores/

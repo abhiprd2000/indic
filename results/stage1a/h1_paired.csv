@@ -1,0 +1,56 @@
+group,test_set,K,fert_a,fert_d,diff_a_minus_d,ci_lo,ci_hi,supports_H1
+existing,Bhojpuri (BHTB),500,2.4683,2.1404,0.3279,0.3107,0.3454,True
+existing,Bhojpuri (BHTB),1000,2.3392,1.8662,0.473,0.454,0.493,True
+existing,Bhojpuri (BHTB),2000,2.255,1.6305,0.6245,0.6016,0.6472,True
+existing,Bhojpuri (BHTB),4000,2.2029,1.4429,0.7599,0.7339,0.7844,True
+existing,Bhojpuri (BHTB),8000,2.1781,1.2986,0.8794,0.8536,0.9038,True
+existing,Magahi (MGTB),500,2.3294,2.0702,0.2592,0.2464,0.2713,True
+existing,Magahi (MGTB),1000,2.1972,1.8403,0.3569,0.3427,0.3711,True
+existing,Magahi (MGTB),2000,2.108,1.6394,0.4686,0.4532,0.4841,True
+existing,Magahi (MGTB),4000,2.0496,1.4647,0.5849,0.5689,0.5998,True
+existing,Magahi (MGTB),8000,2.0132,1.3299,0.6833,0.6674,0.6988,True
+existing,Hindi (HDTB),500,2.7808,2.519,0.2618,0.2545,0.268,True
+existing,Hindi (HDTB),1000,2.6192,2.1625,0.4567,0.449,0.4638,True
+existing,Hindi (HDTB),2000,2.519,1.8992,0.6197,0.6104,0.6285,True
+existing,Hindi (HDTB),4000,2.4699,1.6429,0.827,0.8165,0.837,True
+existing,Hindi (HDTB),8000,2.4442,1.4522,0.992,0.9815,1.0017,True
+existing,Maithili (web),500,3.0269,2.7818,0.2451,0.2367,0.2546,True
+existing,Maithili (web),1000,2.8251,2.4305,0.3946,0.3847,0.4055,True
+existing,Maithili (web),2000,2.6957,2.1281,0.5676,0.5562,0.58,True
+existing,Maithili (web),4000,2.6185,1.8592,0.7593,0.745,0.7732,True
+existing,Maithili (web),8000,2.5745,1.6521,0.9224,0.908,0.9367,True
+existing,Angika (MT),500,2.9325,2.78,0.1525,0.1461,0.1589,True
+existing,Angika (MT),1000,2.7675,2.4835,0.284,0.2766,0.2914,True
+existing,Angika (MT),2000,2.6774,2.1488,0.5287,0.52,0.5381,True
+existing,Angika (MT),4000,2.633,1.9434,0.6896,0.6802,0.6996,True
+existing,Angika (MT),8000,2.607,1.7654,0.8415,0.8321,0.8523,True
+existing,English (2k),500,1.3127,1.3127,0.0,0.0,0.0,False
+existing,English (2k),1000,1.3127,1.3127,0.0,0.0,0.0,False
+existing,English (2k),2000,1.3127,1.3127,0.0,0.0,0.0,False
+existing,English (2k),4000,1.3127,1.3127,0.0,0.0,0.0,False
+existing,English (2k),8000,1.3127,1.3127,0.0,0.0,0.0,False
+flores,FLORES devtest bho,500,2.8229,2.5156,0.3074,0.2979,0.3165,True
+flores,FLORES devtest bho,1000,2.6472,2.2336,0.4136,0.4038,0.4231,True
+flores,FLORES devtest bho,2000,2.5404,1.9642,0.5761,0.5651,0.5865,True
+flores,FLORES devtest bho,4000,2.4821,1.7433,0.7388,0.7261,0.7512,True
+flores,FLORES devtest bho,8000,2.4538,1.5719,0.882,0.8687,0.8945,True
+flores,FLORES devtest mag,500,2.9444,2.6257,0.3186,0.3097,0.3278,True
+flores,FLORES devtest mag,1000,2.7659,2.35,0.4159,0.4067,0.4259,True
+flores,FLORES devtest mag,2000,2.6611,2.0691,0.592,0.5811,0.6031,True
+flores,FLORES devtest mag,4000,2.5454,1.8449,0.7005,0.6872,0.7147,True
+flores,FLORES devtest mag,8000,2.4992,1.6305,0.8687,0.8546,0.8829,True
+flores,FLORES devtest mai,500,2.8731,2.6224,0.2507,0.2416,0.26,True
+flores,FLORES devtest mai,1000,2.6777,2.297,0.3807,0.3714,0.3918,True
+flores,FLORES devtest mai,2000,2.5662,2.018,0.5482,0.5377,0.5597,True
+flores,FLORES devtest mai,4000,2.5046,1.78,0.7246,0.7127,0.7367,True
+flores,FLORES devtest mai,8000,2.4736,1.5845,0.8892,0.8762,0.9017,True
+flores,FLORES devtest hin,500,2.9725,2.7645,0.208,0.1979,0.2182,True
+flores,FLORES devtest hin,1000,2.7903,2.3966,0.3937,0.3849,0.4033,True
+flores,FLORES devtest hin,2000,2.6615,2.1485,0.513,0.5022,0.5239,True
+flores,FLORES devtest hin,4000,2.5937,1.8841,0.7097,0.6971,0.7221,True
+flores,FLORES devtest hin,8000,2.5605,1.6684,0.8921,0.8794,0.9054,True
+flores,FLORES devtest eng,500,1.2612,1.2612,0.0,0.0,0.0,False
+flores,FLORES devtest eng,1000,1.2612,1.2612,0.0,0.0,0.0,False
+flores,FLORES devtest eng,2000,1.2612,1.2612,0.0,0.0,0.0,False
+flores,FLORES devtest eng,4000,1.2612,1.2612,0.0,0.0,0.0,False
+flores,FLORES devtest eng,8000,1.2612,1.2612,0.0,0.0,0.0,False
