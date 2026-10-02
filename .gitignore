@@ -11,3 +11,6 @@ artifacts/adapt/*.pt
 data/*/tok_train_filtered.txt
 artifacts/tok/s1a/*/
 data/flores/
+artifacts/tok/scan/
+artifacts/tok/s1b/*/
+data/raw/hf/glotlid/

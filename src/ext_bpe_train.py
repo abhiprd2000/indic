@@ -40,7 +40,7 @@ def pretok_counts(tok, plan, lines):
         rows.append(dict(lang=lang, target_MB=round(target, 2), unique_MB=round(uniq_mb, 2), repeat=round(mult, 2)))
     return cnt, rows
 
-def learn(seqs, wts, tokstr, K):
+def learn(seqs, wts, tokstr, K, forbid=None):
     """Greedy BPE merges over weighted id sequences. tokstr: id->str (mutated). Returns list of (a_str, b_str)."""
     str2id = {s: i for i, s in tokstr.items()}
     pc, where = collections.defaultdict(float), collections.defaultdict(set)
@@ -52,7 +52,7 @@ def learn(seqs, wts, tokstr, K):
         c, p = heapq.heappop(heap)
         if pc.get(p) != -c: continue
         a, b = p; s = tokstr[a] + tokstr[b]
-        if s in str2id: pc.pop(p); continue
+        if s in str2id or (forbid and forbid(s)): pc.pop(p); continue
         new = nxt; nxt += 1; tokstr[new] = s; str2id[s] = new; merges.append((tokstr[a], tokstr[b]))
         changed = set()
         for i in where.pop(p):
@@ -78,8 +78,9 @@ def build(base_dir, merges, K, out):
     nid = max(max(m["vocab"].values()), max(a["id"] for a in j["added_tokens"])) + 1
     # tokenizers renumbers special tokens to len(vocab) unless they are in the model vocab; keep their ids fixed
     for a in j["added_tokens"]: m["vocab"].setdefault(a["content"], a["id"])
+    as_list = not m["merges"] or isinstance(m["merges"][0], list)  # merges are pairs or "a b" strings depending on the tokenizer
     for k, (a, b) in enumerate(merges[:K]):
-        m["vocab"][a + b] = nid + k; m["merges"].append([a, b])
+        m["vocab"][a + b] = nid + k; m["merges"].append([a, b] if as_list else f"{a} {b}")
     os.makedirs(out, exist_ok=True)
     for f in os.listdir(base_dir):
         if f != "tokenizer.json": open(f"{out}/{f}", "wb").write(open(f"{base_dir}/{f}", "rb").read())

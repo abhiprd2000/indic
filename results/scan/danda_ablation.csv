@@ -1,0 +1,22 @@
+kind,set,fert_d,fert_nodanda,diff,pct_d,pct_nodanda
+fertility,Bhojpuri (dev),1.4675,1.4686,0.0011,,
+fertility,Magahi (dev),1.5348,1.5375,0.0027,,
+fertility,Maithili (dev),1.6983,1.7283,0.03,,
+fertility,Angika (dev),1.7686,1.804,0.0354,,
+fertility,Hindi (dev),1.4804,1.5271,0.0466,,
+fertility,English (dev),1.2529,1.2529,0.0,,
+fertility,FLORES dev bho,1.569,1.5689,-0.0001,,
+fertility,FLORES dev mai,1.5821,1.5826,0.0006,,
+fertility,FLORES dev mag,1.6248,1.6258,0.001,,
+fertility,FLORES dev hin,1.6657,1.6663,0.0005,,
+fertility,FLORES dev eng,1.2529,1.2529,0.0,,
+pct_sents_changed_vs_base,ben_Beng,,,,5.32,0.0
+pct_sents_changed_vs_base,tam_Taml,,,,0.0,0.0
+pct_sents_changed_vs_base,urd_Arab,,,,0.0,0.0
+pct_sents_changed_vs_base,tha_Thai,,,,0.0,0.0
+pct_sents_changed_vs_base,jpn_Jpan,,,,0.0,0.0
+pct_sents_changed_vs_base,arb_Arab,,,,0.0,0.0
+pct_sents_changed_vs_base,fra_Latn,,,,0.0,0.0
+pct_sents_changed_vs_base,spa_Latn,,,,0.0,0.0
+pct_sents_changed_vs_base,eng_Latn,,,,0.0,0.0
+pct_sents_changed_vs_base,hin_Deva,,,,100.0,100.0

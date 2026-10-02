@@ -1,0 +1,26 @@
+merges 8000 with danda: 0 39s
+std d K=8000 tokens containing danda: 14
+           set  fert_d  fert_nodanda    diff
+Bhojpuri (dev)  1.4675        1.4686  0.0011
+  Magahi (dev)  1.5348        1.5375  0.0027
+Maithili (dev)  1.6983        1.7283  0.0300
+  Angika (dev)  1.7686        1.8040  0.0354
+   Hindi (dev)  1.4804        1.5271  0.0466
+ English (dev)  1.2529        1.2529  0.0000
+FLORES dev bho  1.5690        1.5689 -0.0001
+FLORES dev mai  1.5821        1.5826  0.0006
+FLORES dev mag  1.6248        1.6258  0.0010
+FLORES dev hin  1.6657        1.6663  0.0005
+FLORES dev eng  1.2529        1.2529  0.0000
+max |diff|: 0.0466
+     set  pct_d  pct_nodanda
+ben_Beng   5.32          0.0
+tam_Taml   0.00          0.0
+urd_Arab   0.00          0.0
+tha_Thai   0.00          0.0
+jpn_Jpan   0.00          0.0
+arb_Arab   0.00          0.0
+fra_Latn   0.00          0.0
+spa_Latn   0.00          0.0
+eng_Latn   0.00          0.0
+hin_Deva 100.00        100.0

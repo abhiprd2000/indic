@@ -1,0 +1,17 @@
+sets {'Bhojpuri (BHTB)': 357, 'Magahi (MGTB)': 551, 'Hindi (HDTB)': 1684, 'Maithili (web)': 2011, 'Angika (MT)': 1492, 'FLORES bho': 1012, 'FLORES mag': 1012, 'FLORES mai': 1012, 'FLORES hin': 1012, 'FLORES eng': 1012}
+loaded ['Qwen/Qwen2.5-7B', 'Qwen/Qwen3-1.7B', 'meta-llama/Llama-3.1-8B', 'meta-llama/Llama-3.2-1B', 'google/gemma-3-4b-pt', 'mistralai/Mistral-Nemo-Base-2407', 'microsoft/phi-4', 'allenai/Olmo-3-1025-7B', 'deepseek-ai/DeepSeek-V3', 'HuggingFaceTB/SmolLM3-3B', 'xlm-roberta-base', 'google/mt5-base', 'ai4bharat/IndicBERTv2-MLM-only', 'tiktoken o200k_base'] skipped []
+Qwen/Qwen2.5-7B 151665 byte-level BPE with regex split 85.61 cut@mark 84.22 62s
+Qwen/Qwen3-1.7B 151669 byte-level BPE with regex split 85.61 cut@mark 84.22 66s
+meta-llama/Llama-3.1-8B 128256 byte-level BPE with regex split 85.53 cut@mark 84.22 69s
+meta-llama/Llama-3.2-1B 128256 byte-level BPE with regex split 85.53 cut@mark 84.22 73s
+google/gemma-3-4b-pt 262145 SentencePiece BPE (byte fallback) split 0.0 cut@mark 0.0 75s
+mistralai/Mistral-Nemo-Base-2407 131072 byte-level BPE with regex split 6.79 cut@mark 0.0 78s
+microsoft/phi-4 100352 byte-level BPE with regex split 85.53 cut@mark 84.22 82s
+allenai/Olmo-3-1025-7B 100278 byte-level BPE with regex split 85.53 cut@mark 84.22 86s
+deepseek-ai/DeepSeek-V3 128815 byte-level BPE with regex split 6.73 cut@mark 0.0 89s
+HuggingFaceTB/SmolLM3-3B 128256 byte-level BPE with regex split 85.53 cut@mark 84.22 92s
+xlm-roberta-base 250002 SentencePiece unigram split 0.0 cut@mark 0.0 95s
+google/mt5-base 250100 SentencePiece unigram split 0.0 cut@mark 0.0 98s
+ai4bharat/IndicBERTv2-MLM-only 250000 WordPiece split 6.63 cut@mark 0.0 100s
+tiktoken o200k_base 200019 tiktoken (BPE over bytes with regex) split 6.71 cut@mark 0.0 101s
+skipped: []
