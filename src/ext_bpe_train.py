@@ -1,7 +1,9 @@
 """Continued BPE: K extra merges over Qwen3 token sequences. Writes artifacts/tok/<mix>/merges.json and tokenizers."""
 import os, sys, json, random, heapq, collections, time
+sys.path.insert(0, "src")
 import pandas as pd
 from transformers import AutoTokenizer
+import data_access as DA
 
 SEED, BUDGET_MB, ALPHA, KMAX = 0, 40, 0.3, 32000
 SWEEP = [500, 1000, 2000, 4000, 8000, 16000, 32000]
@@ -10,8 +12,8 @@ MIXES = {"hin_only": (["hin"], None), "natural4": (["hin", "bho", "mai", "mag"],
          "upsampled4": (["hin", "bho", "mai", "mag"], ALPHA), "lowonly": (["bho", "mai", "mag"], ALPHA)}
 SWEEP_MIX = "upsampled4"  # fixed before seeing results
 
-def read_lines(lang):
-    L = [l.rstrip("\n") for l in open(f"data/{lang}/tok_train.txt", encoding="utf-8")]
+def read_lines(lang, split="tok_train"):
+    L = DA.load(lang, split)
     random.Random(SEED).shuffle(L)
     return L
 

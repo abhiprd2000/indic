@@ -50,9 +50,9 @@ def boot(nw, nt, ns, B=1000):
 def eval_tok(tok, sets=None):
     return {sn: boot(*sent_stats(tok, s)) for sn, s in (sets or test_sets()).items()}
 
-def target_plan(mix="lowonly"):
+def target_plan(mix="lowonly", split="tok_train"):
     langs = ["hin", "bho", "mai", "mag"]
-    lines = {l: T.read_lines(l) for l in langs}
+    lines = {l: T.read_lines(l, split) for l in langs}
     sizes = {l: sum(len(s.encode()) + 1 for s in lines[l]) / 1e6 for l in langs}
     ls, alpha = T.MIXES[mix]
     return T.mix_plan(ls, alpha, sizes), lines

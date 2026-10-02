@@ -1,0 +1,32 @@
+a merges 32000 17s
+d merges 32000 31s
+variant     K    ok  full  fragment  mark_other  ambiguous
+      a 32000 31977     0         0           4         19
+      a  8000  8000     0         0           0          0
+      d 32000 31998     0         0           0          2
+      d  8000  7998     0         0           0          2
+FLORES+ dev skipped: []
+roundtrip failures vs NFC text: 0 | raw: 11136 over 400 checks (tokenizer applies NFC)
+K         0      250    500    1000   2000   4000    8000    16000
+lang                                                              
+arb_Arab   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+ben_Beng   0.00    0.6    0.6    0.6    0.6    0.7    5.32    5.42
+eng_Latn   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+fra_Latn   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+hin_Deva  21.66  100.0  100.0  100.0  100.0  100.0  100.00  100.00
+jpn_Jpan   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+spa_Latn   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.10
+tam_Taml   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+tha_Thai   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+urd_Arab   0.00    0.0    0.0    0.0    0.0    0.0    0.00    0.00
+    lang  pct_sents_changed
+ben_Beng               5.42
+tam_Taml               0.00
+urd_Arab               0.00
+tha_Thai               0.00
+jpn_Jpan               0.00
+arb_Arab               0.00
+fra_Latn               0.00
+spa_Latn               0.10
+eng_Latn               0.00
+hin_Deva             100.00

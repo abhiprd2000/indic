@@ -1,0 +1,401 @@
+variant,K,set,n,failures_raw,failures_vs_nfc,n_not_nfc
+a,0,bho dev,1006,0,0,0
+a,0,mai dev,1004,0,0,0
+a,0,mag dev,1128,0,0,0
+a,0,ang dev,747,0,0,0
+a,0,hin dev,1654,0,0,0
+a,0,en dev,997,0,0,0
+a,0,bho test,2006,0,0,0
+a,0,mai test,2011,0,0,0
+a,0,mag test,2013,0,0,0
+a,0,ang test,1492,0,0,0
+a,0,hin test,2001,0,0,0
+a,0,en test,2000,0,0,0
+a,0,UD bho_bhtb-ud-test,357,0,0,0
+a,0,UD mag_mgtb-ud-test,551,0,0,0
+a,0,UD hi_hdtb-ud-test,1684,0,0,0
+a,0,FLORES dev ben_Beng,997,586,0,586
+a,0,FLORES dev tam_Taml,997,2,0,2
+a,0,FLORES dev urd_Arab,997,8,0,8
+a,0,FLORES dev tha_Thai,997,0,0,0
+a,0,FLORES dev jpn_Jpan,997,0,0,0
+a,0,FLORES dev arb_Arab,997,10,0,10
+a,0,FLORES dev fra_Latn,997,0,0,0
+a,0,FLORES dev spa_Latn,997,0,0,0
+a,0,FLORES dev eng_Latn,997,0,0,0
+a,0,FLORES dev hin_Deva,997,90,0,90
+d,0,bho dev,1006,0,0,0
+d,0,mai dev,1004,0,0,0
+d,0,mag dev,1128,0,0,0
+d,0,ang dev,747,0,0,0
+d,0,hin dev,1654,0,0,0
+d,0,en dev,997,0,0,0
+d,0,bho test,2006,0,0,0
+d,0,mai test,2011,0,0,0
+d,0,mag test,2013,0,0,0
+d,0,ang test,1492,0,0,0
+d,0,hin test,2001,0,0,0
+d,0,en test,2000,0,0,0
+d,0,UD bho_bhtb-ud-test,357,0,0,0
+d,0,UD mag_mgtb-ud-test,551,0,0,0
+d,0,UD hi_hdtb-ud-test,1684,0,0,0
+d,0,FLORES dev ben_Beng,997,586,0,586
+d,0,FLORES dev tam_Taml,997,2,0,2
+d,0,FLORES dev urd_Arab,997,8,0,8
+d,0,FLORES dev tha_Thai,997,0,0,0
+d,0,FLORES dev jpn_Jpan,997,0,0,0
+d,0,FLORES dev arb_Arab,997,10,0,10
+d,0,FLORES dev fra_Latn,997,0,0,0
+d,0,FLORES dev spa_Latn,997,0,0,0
+d,0,FLORES dev eng_Latn,997,0,0,0
+d,0,FLORES dev hin_Deva,997,90,0,90
+a,250,bho dev,1006,0,0,0
+a,250,mai dev,1004,0,0,0
+a,250,mag dev,1128,0,0,0
+a,250,ang dev,747,0,0,0
+a,250,hin dev,1654,0,0,0
+a,250,en dev,997,0,0,0
+a,250,bho test,2006,0,0,0
+a,250,mai test,2011,0,0,0
+a,250,mag test,2013,0,0,0
+a,250,ang test,1492,0,0,0
+a,250,hin test,2001,0,0,0
+a,250,en test,2000,0,0,0
+a,250,UD bho_bhtb-ud-test,357,0,0,0
+a,250,UD mag_mgtb-ud-test,551,0,0,0
+a,250,UD hi_hdtb-ud-test,1684,0,0,0
+a,250,FLORES dev ben_Beng,997,586,0,586
+a,250,FLORES dev tam_Taml,997,2,0,2
+a,250,FLORES dev urd_Arab,997,8,0,8
+a,250,FLORES dev tha_Thai,997,0,0,0
+a,250,FLORES dev jpn_Jpan,997,0,0,0
+a,250,FLORES dev arb_Arab,997,10,0,10
+a,250,FLORES dev fra_Latn,997,0,0,0
+a,250,FLORES dev spa_Latn,997,0,0,0
+a,250,FLORES dev eng_Latn,997,0,0,0
+a,250,FLORES dev hin_Deva,997,90,0,90
+a,500,bho dev,1006,0,0,0
+a,500,mai dev,1004,0,0,0
+a,500,mag dev,1128,0,0,0
+a,500,ang dev,747,0,0,0
+a,500,hin dev,1654,0,0,0
+a,500,en dev,997,0,0,0
+a,500,bho test,2006,0,0,0
+a,500,mai test,2011,0,0,0
+a,500,mag test,2013,0,0,0
+a,500,ang test,1492,0,0,0
+a,500,hin test,2001,0,0,0
+a,500,en test,2000,0,0,0
+a,500,UD bho_bhtb-ud-test,357,0,0,0
+a,500,UD mag_mgtb-ud-test,551,0,0,0
+a,500,UD hi_hdtb-ud-test,1684,0,0,0
+a,500,FLORES dev ben_Beng,997,586,0,586
+a,500,FLORES dev tam_Taml,997,2,0,2
+a,500,FLORES dev urd_Arab,997,8,0,8
+a,500,FLORES dev tha_Thai,997,0,0,0
+a,500,FLORES dev jpn_Jpan,997,0,0,0
+a,500,FLORES dev arb_Arab,997,10,0,10
+a,500,FLORES dev fra_Latn,997,0,0,0
+a,500,FLORES dev spa_Latn,997,0,0,0
+a,500,FLORES dev eng_Latn,997,0,0,0
+a,500,FLORES dev hin_Deva,997,90,0,90
+a,1000,bho dev,1006,0,0,0
+a,1000,mai dev,1004,0,0,0
+a,1000,mag dev,1128,0,0,0
+a,1000,ang dev,747,0,0,0
+a,1000,hin dev,1654,0,0,0
+a,1000,en dev,997,0,0,0
+a,1000,bho test,2006,0,0,0
+a,1000,mai test,2011,0,0,0
+a,1000,mag test,2013,0,0,0
+a,1000,ang test,1492,0,0,0
+a,1000,hin test,2001,0,0,0
+a,1000,en test,2000,0,0,0
+a,1000,UD bho_bhtb-ud-test,357,0,0,0
+a,1000,UD mag_mgtb-ud-test,551,0,0,0
+a,1000,UD hi_hdtb-ud-test,1684,0,0,0
+a,1000,FLORES dev ben_Beng,997,586,0,586
+a,1000,FLORES dev tam_Taml,997,2,0,2
+a,1000,FLORES dev urd_Arab,997,8,0,8
+a,1000,FLORES dev tha_Thai,997,0,0,0
+a,1000,FLORES dev jpn_Jpan,997,0,0,0
+a,1000,FLORES dev arb_Arab,997,10,0,10
+a,1000,FLORES dev fra_Latn,997,0,0,0
+a,1000,FLORES dev spa_Latn,997,0,0,0
+a,1000,FLORES dev eng_Latn,997,0,0,0
+a,1000,FLORES dev hin_Deva,997,90,0,90
+a,2000,bho dev,1006,0,0,0
+a,2000,mai dev,1004,0,0,0
+a,2000,mag dev,1128,0,0,0
+a,2000,ang dev,747,0,0,0
+a,2000,hin dev,1654,0,0,0
+a,2000,en dev,997,0,0,0
+a,2000,bho test,2006,0,0,0
+a,2000,mai test,2011,0,0,0
+a,2000,mag test,2013,0,0,0
+a,2000,ang test,1492,0,0,0
+a,2000,hin test,2001,0,0,0
+a,2000,en test,2000,0,0,0
+a,2000,UD bho_bhtb-ud-test,357,0,0,0
+a,2000,UD mag_mgtb-ud-test,551,0,0,0
+a,2000,UD hi_hdtb-ud-test,1684,0,0,0
+a,2000,FLORES dev ben_Beng,997,586,0,586
+a,2000,FLORES dev tam_Taml,997,2,0,2
+a,2000,FLORES dev urd_Arab,997,8,0,8
+a,2000,FLORES dev tha_Thai,997,0,0,0
+a,2000,FLORES dev jpn_Jpan,997,0,0,0
+a,2000,FLORES dev arb_Arab,997,10,0,10
+a,2000,FLORES dev fra_Latn,997,0,0,0
+a,2000,FLORES dev spa_Latn,997,0,0,0
+a,2000,FLORES dev eng_Latn,997,0,0,0
+a,2000,FLORES dev hin_Deva,997,90,0,90
+a,4000,bho dev,1006,0,0,0
+a,4000,mai dev,1004,0,0,0
+a,4000,mag dev,1128,0,0,0
+a,4000,ang dev,747,0,0,0
+a,4000,hin dev,1654,0,0,0
+a,4000,en dev,997,0,0,0
+a,4000,bho test,2006,0,0,0
+a,4000,mai test,2011,0,0,0
+a,4000,mag test,2013,0,0,0
+a,4000,ang test,1492,0,0,0
+a,4000,hin test,2001,0,0,0
+a,4000,en test,2000,0,0,0
+a,4000,UD bho_bhtb-ud-test,357,0,0,0
+a,4000,UD mag_mgtb-ud-test,551,0,0,0
+a,4000,UD hi_hdtb-ud-test,1684,0,0,0
+a,4000,FLORES dev ben_Beng,997,586,0,586
+a,4000,FLORES dev tam_Taml,997,2,0,2
+a,4000,FLORES dev urd_Arab,997,8,0,8
+a,4000,FLORES dev tha_Thai,997,0,0,0
+a,4000,FLORES dev jpn_Jpan,997,0,0,0
+a,4000,FLORES dev arb_Arab,997,10,0,10
+a,4000,FLORES dev fra_Latn,997,0,0,0
+a,4000,FLORES dev spa_Latn,997,0,0,0
+a,4000,FLORES dev eng_Latn,997,0,0,0
+a,4000,FLORES dev hin_Deva,997,90,0,90
+a,8000,bho dev,1006,0,0,0
+a,8000,mai dev,1004,0,0,0
+a,8000,mag dev,1128,0,0,0
+a,8000,ang dev,747,0,0,0
+a,8000,hin dev,1654,0,0,0
+a,8000,en dev,997,0,0,0
+a,8000,bho test,2006,0,0,0
+a,8000,mai test,2011,0,0,0
+a,8000,mag test,2013,0,0,0
+a,8000,ang test,1492,0,0,0
+a,8000,hin test,2001,0,0,0
+a,8000,en test,2000,0,0,0
+a,8000,UD bho_bhtb-ud-test,357,0,0,0
+a,8000,UD mag_mgtb-ud-test,551,0,0,0
+a,8000,UD hi_hdtb-ud-test,1684,0,0,0
+a,8000,FLORES dev ben_Beng,997,586,0,586
+a,8000,FLORES dev tam_Taml,997,2,0,2
+a,8000,FLORES dev urd_Arab,997,8,0,8
+a,8000,FLORES dev tha_Thai,997,0,0,0
+a,8000,FLORES dev jpn_Jpan,997,0,0,0
+a,8000,FLORES dev arb_Arab,997,10,0,10
+a,8000,FLORES dev fra_Latn,997,0,0,0
+a,8000,FLORES dev spa_Latn,997,0,0,0
+a,8000,FLORES dev eng_Latn,997,0,0,0
+a,8000,FLORES dev hin_Deva,997,90,0,90
+a,16000,bho dev,1006,0,0,0
+a,16000,mai dev,1004,0,0,0
+a,16000,mag dev,1128,0,0,0
+a,16000,ang dev,747,0,0,0
+a,16000,hin dev,1654,0,0,0
+a,16000,en dev,997,0,0,0
+a,16000,bho test,2006,0,0,0
+a,16000,mai test,2011,0,0,0
+a,16000,mag test,2013,0,0,0
+a,16000,ang test,1492,0,0,0
+a,16000,hin test,2001,0,0,0
+a,16000,en test,2000,0,0,0
+a,16000,UD bho_bhtb-ud-test,357,0,0,0
+a,16000,UD mag_mgtb-ud-test,551,0,0,0
+a,16000,UD hi_hdtb-ud-test,1684,0,0,0
+a,16000,FLORES dev ben_Beng,997,586,0,586
+a,16000,FLORES dev tam_Taml,997,2,0,2
+a,16000,FLORES dev urd_Arab,997,8,0,8
+a,16000,FLORES dev tha_Thai,997,0,0,0
+a,16000,FLORES dev jpn_Jpan,997,0,0,0
+a,16000,FLORES dev arb_Arab,997,10,0,10
+a,16000,FLORES dev fra_Latn,997,0,0,0
+a,16000,FLORES dev spa_Latn,997,0,0,0
+a,16000,FLORES dev eng_Latn,997,0,0,0
+a,16000,FLORES dev hin_Deva,997,90,0,90
+d,250,bho dev,1006,0,0,0
+d,250,mai dev,1004,0,0,0
+d,250,mag dev,1128,0,0,0
+d,250,ang dev,747,0,0,0
+d,250,hin dev,1654,0,0,0
+d,250,en dev,997,0,0,0
+d,250,bho test,2006,0,0,0
+d,250,mai test,2011,0,0,0
+d,250,mag test,2013,0,0,0
+d,250,ang test,1492,0,0,0
+d,250,hin test,2001,0,0,0
+d,250,en test,2000,0,0,0
+d,250,UD bho_bhtb-ud-test,357,0,0,0
+d,250,UD mag_mgtb-ud-test,551,0,0,0
+d,250,UD hi_hdtb-ud-test,1684,0,0,0
+d,250,FLORES dev ben_Beng,997,586,0,586
+d,250,FLORES dev tam_Taml,997,2,0,2
+d,250,FLORES dev urd_Arab,997,8,0,8
+d,250,FLORES dev tha_Thai,997,0,0,0
+d,250,FLORES dev jpn_Jpan,997,0,0,0
+d,250,FLORES dev arb_Arab,997,10,0,10
+d,250,FLORES dev fra_Latn,997,0,0,0
+d,250,FLORES dev spa_Latn,997,0,0,0
+d,250,FLORES dev eng_Latn,997,0,0,0
+d,250,FLORES dev hin_Deva,997,90,0,90
+d,500,bho dev,1006,0,0,0
+d,500,mai dev,1004,0,0,0
+d,500,mag dev,1128,0,0,0
+d,500,ang dev,747,0,0,0
+d,500,hin dev,1654,0,0,0
+d,500,en dev,997,0,0,0
+d,500,bho test,2006,0,0,0
+d,500,mai test,2011,0,0,0
+d,500,mag test,2013,0,0,0
+d,500,ang test,1492,0,0,0
+d,500,hin test,2001,0,0,0
+d,500,en test,2000,0,0,0
+d,500,UD bho_bhtb-ud-test,357,0,0,0
+d,500,UD mag_mgtb-ud-test,551,0,0,0
+d,500,UD hi_hdtb-ud-test,1684,0,0,0
+d,500,FLORES dev ben_Beng,997,586,0,586
+d,500,FLORES dev tam_Taml,997,2,0,2
+d,500,FLORES dev urd_Arab,997,8,0,8
+d,500,FLORES dev tha_Thai,997,0,0,0
+d,500,FLORES dev jpn_Jpan,997,0,0,0
+d,500,FLORES dev arb_Arab,997,10,0,10
+d,500,FLORES dev fra_Latn,997,0,0,0
+d,500,FLORES dev spa_Latn,997,0,0,0
+d,500,FLORES dev eng_Latn,997,0,0,0
+d,500,FLORES dev hin_Deva,997,90,0,90
+d,1000,bho dev,1006,0,0,0
+d,1000,mai dev,1004,0,0,0
+d,1000,mag dev,1128,0,0,0
+d,1000,ang dev,747,0,0,0
+d,1000,hin dev,1654,0,0,0
+d,1000,en dev,997,0,0,0
+d,1000,bho test,2006,0,0,0
+d,1000,mai test,2011,0,0,0
+d,1000,mag test,2013,0,0,0
+d,1000,ang test,1492,0,0,0
+d,1000,hin test,2001,0,0,0
+d,1000,en test,2000,0,0,0
+d,1000,UD bho_bhtb-ud-test,357,0,0,0
+d,1000,UD mag_mgtb-ud-test,551,0,0,0
+d,1000,UD hi_hdtb-ud-test,1684,0,0,0
+d,1000,FLORES dev ben_Beng,997,586,0,586
+d,1000,FLORES dev tam_Taml,997,2,0,2
+d,1000,FLORES dev urd_Arab,997,8,0,8
+d,1000,FLORES dev tha_Thai,997,0,0,0
+d,1000,FLORES dev jpn_Jpan,997,0,0,0
+d,1000,FLORES dev arb_Arab,997,10,0,10
+d,1000,FLORES dev fra_Latn,997,0,0,0
+d,1000,FLORES dev spa_Latn,997,0,0,0
+d,1000,FLORES dev eng_Latn,997,0,0,0
+d,1000,FLORES dev hin_Deva,997,90,0,90
+d,2000,bho dev,1006,0,0,0
+d,2000,mai dev,1004,0,0,0
+d,2000,mag dev,1128,0,0,0
+d,2000,ang dev,747,0,0,0
+d,2000,hin dev,1654,0,0,0
+d,2000,en dev,997,0,0,0
+d,2000,bho test,2006,0,0,0
+d,2000,mai test,2011,0,0,0
+d,2000,mag test,2013,0,0,0
+d,2000,ang test,1492,0,0,0
+d,2000,hin test,2001,0,0,0
+d,2000,en test,2000,0,0,0
+d,2000,UD bho_bhtb-ud-test,357,0,0,0
+d,2000,UD mag_mgtb-ud-test,551,0,0,0
+d,2000,UD hi_hdtb-ud-test,1684,0,0,0
+d,2000,FLORES dev ben_Beng,997,586,0,586
+d,2000,FLORES dev tam_Taml,997,2,0,2
+d,2000,FLORES dev urd_Arab,997,8,0,8
+d,2000,FLORES dev tha_Thai,997,0,0,0
+d,2000,FLORES dev jpn_Jpan,997,0,0,0
+d,2000,FLORES dev arb_Arab,997,10,0,10
+d,2000,FLORES dev fra_Latn,997,0,0,0
+d,2000,FLORES dev spa_Latn,997,0,0,0
+d,2000,FLORES dev eng_Latn,997,0,0,0
+d,2000,FLORES dev hin_Deva,997,90,0,90
+d,4000,bho dev,1006,0,0,0
+d,4000,mai dev,1004,0,0,0
+d,4000,mag dev,1128,0,0,0
+d,4000,ang dev,747,0,0,0
+d,4000,hin dev,1654,0,0,0
+d,4000,en dev,997,0,0,0
+d,4000,bho test,2006,0,0,0
+d,4000,mai test,2011,0,0,0
+d,4000,mag test,2013,0,0,0
+d,4000,ang test,1492,0,0,0
+d,4000,hin test,2001,0,0,0
+d,4000,en test,2000,0,0,0
+d,4000,UD bho_bhtb-ud-test,357,0,0,0
+d,4000,UD mag_mgtb-ud-test,551,0,0,0
+d,4000,UD hi_hdtb-ud-test,1684,0,0,0
+d,4000,FLORES dev ben_Beng,997,586,0,586
+d,4000,FLORES dev tam_Taml,997,2,0,2
+d,4000,FLORES dev urd_Arab,997,8,0,8
+d,4000,FLORES dev tha_Thai,997,0,0,0
+d,4000,FLORES dev jpn_Jpan,997,0,0,0
+d,4000,FLORES dev arb_Arab,997,10,0,10
+d,4000,FLORES dev fra_Latn,997,0,0,0
+d,4000,FLORES dev spa_Latn,997,0,0,0
+d,4000,FLORES dev eng_Latn,997,0,0,0
+d,4000,FLORES dev hin_Deva,997,90,0,90
+d,8000,bho dev,1006,0,0,0
+d,8000,mai dev,1004,0,0,0
+d,8000,mag dev,1128,0,0,0
+d,8000,ang dev,747,0,0,0
+d,8000,hin dev,1654,0,0,0
+d,8000,en dev,997,0,0,0
+d,8000,bho test,2006,0,0,0
+d,8000,mai test,2011,0,0,0
+d,8000,mag test,2013,0,0,0
+d,8000,ang test,1492,0,0,0
+d,8000,hin test,2001,0,0,0
+d,8000,en test,2000,0,0,0
+d,8000,UD bho_bhtb-ud-test,357,0,0,0
+d,8000,UD mag_mgtb-ud-test,551,0,0,0
+d,8000,UD hi_hdtb-ud-test,1684,0,0,0
+d,8000,FLORES dev ben_Beng,997,586,0,586
+d,8000,FLORES dev tam_Taml,997,2,0,2
+d,8000,FLORES dev urd_Arab,997,8,0,8
+d,8000,FLORES dev tha_Thai,997,0,0,0
+d,8000,FLORES dev jpn_Jpan,997,0,0,0
+d,8000,FLORES dev arb_Arab,997,10,0,10
+d,8000,FLORES dev fra_Latn,997,0,0,0
+d,8000,FLORES dev spa_Latn,997,0,0,0
+d,8000,FLORES dev eng_Latn,997,0,0,0
+d,8000,FLORES dev hin_Deva,997,90,0,90
+d,16000,bho dev,1006,0,0,0
+d,16000,mai dev,1004,0,0,0
+d,16000,mag dev,1128,0,0,0
+d,16000,ang dev,747,0,0,0
+d,16000,hin dev,1654,0,0,0
+d,16000,en dev,997,0,0,0
+d,16000,bho test,2006,0,0,0
+d,16000,mai test,2011,0,0,0
+d,16000,mag test,2013,0,0,0
+d,16000,ang test,1492,0,0,0
+d,16000,hin test,2001,0,0,0
+d,16000,en test,2000,0,0,0
+d,16000,UD bho_bhtb-ud-test,357,0,0,0
+d,16000,UD mag_mgtb-ud-test,551,0,0,0
+d,16000,UD hi_hdtb-ud-test,1684,0,0,0
+d,16000,FLORES dev ben_Beng,997,586,0,586
+d,16000,FLORES dev tam_Taml,997,2,0,2
+d,16000,FLORES dev urd_Arab,997,8,0,8
+d,16000,FLORES dev tha_Thai,997,0,0,0
+d,16000,FLORES dev jpn_Jpan,997,0,0,0
+d,16000,FLORES dev arb_Arab,997,10,0,10
+d,16000,FLORES dev fra_Latn,997,0,0,0
+d,16000,FLORES dev spa_Latn,997,0,0,0
+d,16000,FLORES dev eng_Latn,997,0,0,0
+d,16000,FLORES dev hin_Deva,997,90,0,90
