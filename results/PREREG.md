@@ -16,3 +16,9 @@
 
 ## Logging
 All runs are logged, including failures; earlier results that used test sets for choices (Tasks 3-6: K, mix, LR) are not valid selections and are superseded by dev-based selection.
+
+## Addendum before step 5 (written before any dev fertility was computed)
+- Mix selection: candidate mixes hin_only, natural4, upsampled4, lowonly (all 40 MB budget, built on filtered train, variant d). Score = mean dev fertility over bho, mai, mag, ang and over K in {500, 1000, 2000, 4000, 8000}. If the best score is within 0.01 of another mix, prefer the one with fewer unique MB of text, then fewer languages.
+- English dev = AngikaMT English dev column (997 sentences, disjoint from the English test sample, checked in code).
+- Step 4 FLORES+ safety check and the round-trip check use FLORES+ dev and the dev/test sets with `purpose="audit"` (integrity only, no metric). FLORES+ devtest is read only in step 6 with FINAL_EVAL=1.
+- New-token script check: complete characters in a new token must be Devanagari, Latin, digits, punctuation or spaces; fragments of a split UTF-8 character count as violations only if their known bytes already lie outside those ranges.
